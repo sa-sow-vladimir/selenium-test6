@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T18:14:31" hostname="SWO059169593957" time="80.882">
+  <properties/>
+  <testcase name="Ejemplo1.1" classname="Ejemplo" time="80.882"/>
+  <system-out><![CDATA[14:14:32.022 ?[92m|-- Given that Cris go to page?[0m
+14:14:32.845 ?[92m|---- Actor go to?[0m
+14:14:32.891 ?[92m|------ actor opens the https://www.koaj.co/?[0m
+14:15:17.346 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
+14:15:17.402 ?[92m|---- Actor iniciar?[0m
+14:15:17.810 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
+14:15:27.681 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
+14:15:32.800 ?[92m|------ actor enters '1073177637C' into Pass?[0m
+14:15:37.593 ?[92m|-- Then Cris see the homepage?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 38551
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678731284.265][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Mar 13, 2023 2:14:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

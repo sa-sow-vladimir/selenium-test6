@@ -1,0 +1,55 @@
+defaultTasks 'clean', 'test', 'aggregate' //dar seecuencia, para ejecutarlo con el comando gradle, ya hace las 3
+
+apply plugin: 'java'
+apply plugin: 'idea' //referencia al IDE
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8  //eston genera la compatibilidad con la version 8 de java, si tiene otra pues pone 1.x
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8' //facilitarlocalizadores "ñ"
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.6.0") //versionDeserenityGradleUlt
+    }
+}
+
+
+configurations.all {
+    resolutionStrategy{
+        force "io.cucumber:cucumber-core:6.10.3" //version de integracion CUCUMBER JVM core
+    }
+}
+
+
+dependencies {
+    //actualizar la version en maven repository
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '2.4.25'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber6', version: '2.4.24'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.4.25'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.4.25'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.4.24'
+    implementation group: 'net.serenity-bdd', name: 'serenity-ensure', version: '2.4.24'
+}
+
+test {
+
+    systemProperty "file.enconding","UTF-8"
+
+}
