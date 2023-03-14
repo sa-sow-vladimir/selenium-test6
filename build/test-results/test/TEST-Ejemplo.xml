@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T19:19:22" hostname="SWO059169593957" time="80.967">
+<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T20:00:29" hostname="SWO059169593957" time="53.861">
   <properties/>
-  <testcase name="Ejemplo1.1" classname="Ejemplo" time="80.967"/>
-  <system-out><![CDATA[15:19:23.674 ?[92m|-- Given that Cris go to page?[0m
-15:19:24.568 ?[92m|---- Actor go to?[0m
-15:19:24.610 ?[92m|------ actor opens the https://www.koaj.co/?[0m
-15:20:16.269 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
-15:20:16.333 ?[92m|---- Actor iniciar?[0m
-15:20:16.987 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
-15:20:26.037 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
-15:20:31.546 ?[92m|------ actor enters '1073177637C' into Pass?[0m
-15:20:41.178 ?[92m|-- Then Cris see the homepage?[0m
+  <testcase name="Ejemplo1.1" classname="Ejemplo" time="53.861"/>
+  <system-out><![CDATA[16:00:30.762 ?[92m|-- Given that Cris go to page?[0m
+16:00:31.498 ?[92m|---- Actor go to?[0m
+16:00:31.525 ?[92m|------ actor opens the https://www.koaj.co/?[0m
+16:01:05.906 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
+16:01:05.960 ?[92m|---- Actor iniciar?[0m
+16:01:06.584 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
+16:01:17.628 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
+16:01:20.316 ?[92m|------ actor enters '1073177637C' into Pass?[0m
+16:01:22.137 ?[92m|-- Then Cris see the homepage?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting Microsoft Edge WebDriver 110.0.1587.69 (f970cc122bfe683a1917444c8c3ba299b94f7ec8) on port 1825
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 16872
 Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-[1678821574.444][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 14, 2023 3:19:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 14, 2023 4:00:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
