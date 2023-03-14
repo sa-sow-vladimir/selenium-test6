@@ -21,9 +21,6 @@ public class Iniciar implements Task {
         this.pass = pass;
     }
 
-
-
-
     @Override
     public <T extends Actor> void performAs (T actor){
         actor.attemptsTo(

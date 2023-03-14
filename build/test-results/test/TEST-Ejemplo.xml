@@ -1,23 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T18:14:31" hostname="SWO059169593957" time="80.882">
+<testsuite name="Ejemplo" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-14T18:40:06" hostname="SWO059169593957" time="28.845">
   <properties/>
-  <testcase name="Ejemplo1.1" classname="Ejemplo" time="80.882"/>
-  <system-out><![CDATA[14:14:32.022 ?[92m|-- Given that Cris go to page?[0m
-14:14:32.845 ?[92m|---- Actor go to?[0m
-14:14:32.891 ?[92m|------ actor opens the https://www.koaj.co/?[0m
-14:15:17.346 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
-14:15:17.402 ?[92m|---- Actor iniciar?[0m
-14:15:17.810 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
-14:15:27.681 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
-14:15:32.800 ?[92m|------ actor enters '1073177637C' into Pass?[0m
-14:15:37.593 ?[92m|-- Then Cris see the homepage?[0m
+  <testcase name="Ejemplo1.1" classname="Ejemplo" time="28.845">
+    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.cssSelector: .flex .login to be present (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SWO059169593957', ip: '192.168.68.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.cssSelector: .flex .login to be present (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SWO059169593957', ip: '192.168.68.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1094)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1067)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:987)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1263)
+	at net.serenitybdd.screenplay.actions.ClickOnElement.performAs(ClickOnElement.java:12)
+	at net.serenitybdd.screenplay.actions.ClickOnElement$ByteBuddy$q8TTiQFD.performAs$accessor$SR3IjNN0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnElement$ByteBuddy$q8TTiQFD.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at org.example.Task.Iniciar.performAs(Iniciar.java:26)
+	at org.example.Task.Iniciar$ByteBuddy$aOI1Jk9j.performAs$accessor$skT89aQY(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at org.example.Task.Iniciar$ByteBuddy$aOI1Jk9j.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at org.example.stepdefinitions.StepDefinitions.whenCrisUsingTheCredentialsOnRegister(StepDefinitions.java:31)
+	at ✽.Cris using the credentials on register &quot;trishtan142@gmail.com&quot; &quot;1073177637C&quot;(file:///C:/Users/jonathan.amaya/eclipse-workspace/Example2/src/test/resources/Features/FeatureEX.feature:8)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: .flex .login to be present (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SWO059169593957', ip: '192.168.68.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1064)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:987)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1263)
+	at net.serenitybdd.screenplay.actions.ClickOnElement.performAs(ClickOnElement.java:12)
+	at net.serenitybdd.screenplay.actions.ClickOnElement$ByteBuddy$q8TTiQFD.performAs$accessor$SR3IjNN0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnElement$ByteBuddy$q8TTiQFD.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at org.example.Task.Iniciar.performAs(Iniciar.java:26)
+	at org.example.Task.Iniciar$ByteBuddy$aOI1Jk9j.performAs$accessor$skT89aQY(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at org.example.Task.Iniciar$ByteBuddy$aOI1Jk9j.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at org.example.stepdefinitions.StepDefinitions.whenCrisUsingTheCredentialsOnRegister(StepDefinitions.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:235)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:263)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[14:40:07.788 ?[92m|-- Given that Cris go to page?[0m
+14:40:08.762 ?[92m|---- Actor go to?[0m
+14:40:08.811 ?[92m|------ actor opens the https://www.koaj.co/?[0m
+14:40:28.026 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
+14:40:28.052 ?[92m|---- Actor iniciar?[0m
+14:40:28.358 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
+14:40:33.815 ?[92m|-------- Then Cris see the homepage?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 38551
+  <system-err><![CDATA[Starting Microsoft Edge WebDriver 110.0.1587.69 (f970cc122bfe683a1917444c8c3ba299b94f7ec8) on port 1788
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1678731284.265][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 13, 2023 2:14:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+[1678819214.619][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Mar 14, 2023 2:40:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
