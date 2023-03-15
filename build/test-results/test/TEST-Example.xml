@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Example" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-15T15:37:52" hostname="SWO059169593957" time="41.44">
+  <properties/>
+  <testcase name="Example1.1" classname="Example" time="41.44"/>
+  <system-out><![CDATA[11:37:54.019 ?[92m|-- Given that Cris go to page?[0m
+11:37:55.065 ?[92m|---- Actor go to?[0m
+11:37:55.103 ?[92m|------ actor opens the https://www.koaj.co/?[0m
+11:38:17.688 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
+11:38:17.713 ?[92m|---- Actor iniciar?[0m
+11:38:17.976 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
+11:38:25.712 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
+11:38:29.288 ?[92m|------ actor enters '1073177637C' into Pass?[0m
+11:38:32.771 ?[92m|-- Then Cris see the homepage?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 17124
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 15, 2023 11:38:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
