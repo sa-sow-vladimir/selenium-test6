@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T20:00:29" hostname="SWO059169593957" time="53.861">
+<testsuite name="Ejemplo" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-15T13:18:24" hostname="SWO059169593957" time="142.669">
   <properties/>
-  <testcase name="Ejemplo1.1" classname="Ejemplo" time="53.861"/>
-  <system-out><![CDATA[16:00:30.762 ?[92m|-- Given that Cris go to page?[0m
-16:00:31.498 ?[92m|---- Actor go to?[0m
-16:00:31.525 ?[92m|------ actor opens the https://www.koaj.co/?[0m
-16:01:05.906 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
-16:01:05.960 ?[92m|---- Actor iniciar?[0m
-16:01:06.584 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
-16:01:17.628 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
-16:01:20.316 ?[92m|------ actor enters '1073177637C' into Pass?[0m
-16:01:22.137 ?[92m|-- Then Cris see the homepage?[0m
+  <testcase name="Ejemplo1.1" classname="Ejemplo" time="142.669"/>
+  <system-out><![CDATA[09:18:26.606 ?[92m|-- Given that Cris go to page?[0m
+09:18:28.646 ?[92m|---- Actor go to?[0m
+09:18:28.736 ?[92m|------ actor opens the https://www.koaj.co/?[0m
+09:20:15.917 ?[92m|-- When Cris using the credentials on register "trishtan142@gmail.com" "1073177637C"?[0m
+09:20:16.082 ?[92m|---- Actor iniciar?[0m
+09:20:16.859 ?[92m|------ actor clicks on By.cssSelector: .flex .login?[0m
+09:20:34.433 ?[92m|------ actor enters 'trishtan142@gmail.com' into User?[0m
+09:20:38.337 ?[92m|------ actor enters '1073177637C' into Pass?[0m
+09:20:43.187 ?[92m|-- Then Cris see the homepage?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 16872
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 14, 2023 4:00:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Mar 15, 2023 9:18:29 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Mar 15, 2023 9:19:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
