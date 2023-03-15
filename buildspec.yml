@@ -16,7 +16,7 @@ phases:
       - docker ps
   build:
     commands:
-      - gradle --stacktrace
+      - gradle test --stacktrace
 artifacts:
   files:
     - ./**/*
