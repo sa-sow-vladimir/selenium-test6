@@ -15,7 +15,7 @@ phases:
       - docker ps
   build:
     commands:
-      - gradle test --stacktrace --info
+      - gradle clean test -Pwebdriver.driver=chrome --stacktrace --info
 artifacts:
   files:
     - ./**/*
